@@ -14,10 +14,11 @@ import java.util.List;
  * <p>
  * Note:
  * Could you optimize your algorithm to use only O(k) extra space?
+ * 杨辉三角
  */
 public class PascalsTriangle {
     public static void main(String[] args) throws Exception {
-        System.out.println(new PascalsTriangle().getRow(3));
+        System.out.println(new PascalsTriangle().getRow(4));
     }
 
     public List<Integer> getRow(int rowIndex) {
