@@ -14,6 +14,9 @@ public class PascalsTriangle2 {
 //        {
 //            System.out.println(tests.get(i).toString());
 //        }
+
+
+
         System.out.println(tests.get(k-1).toString());
 
     }
