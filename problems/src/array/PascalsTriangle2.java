@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 另一种方法
+ * 另一种方法杨辉三角，输入行号，输出所在行的数据
  */
 public class PascalsTriangle2 {
     public static void main(String[] args) throws Exception {
@@ -17,9 +17,6 @@ public class PascalsTriangle2 {
 //        {
 //            System.out.println(tests.get(i).toString());
 //        }
-
-
-
         System.out.println(tests.get(k-1).toString());
 
     }
