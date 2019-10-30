@@ -4,27 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by gouthamvidyapradhan on 25/03/2017.
- * <p>
- * Given an index k, return the kth row of the Pascal's triangle.
- * <p>
- * For example, given k = 3,
- * Return [1,3,3,1].
- * <p>
- * Note:
- * Could you optimize your algorithm to use only O(k) extra space?
- * 杨辉三角
- */
-public class PascalsTriangle {
+public class PascalsTriangle2 {
     public static void main(String[] args) throws Exception {
 //        System.out.println(new PascalsTriangle().getRow(4));
-        List<List<Integer>>  tests = new PascalsTriangle().generate(8);
-        System.out.println(new PascalsTriangle().generate(8));
-        for (int i = 0 ;i<tests.size();i++)
-        {
-            System.out.println(tests.get(i).toString());
-        }
+        int k = 3;
+        List<List<Integer>>  tests = new PascalsTriangle().generate(k);
+        System.out.println(new PascalsTriangle().generate(k));
+//        for (int i = 0 ;i<tests.size();i++)
+//        {
+//            System.out.println(tests.get(i).toString());
+//        }
+        System.out.println(tests.get(k-1).toString());
 
     }
 
