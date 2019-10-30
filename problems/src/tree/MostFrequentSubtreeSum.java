@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 最多的子树和
  * Created by gouthamvidyapradhan on 27/03/2017.
  * Given the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie, return all the values with the highest frequency in any order.
  * <p>
@@ -48,9 +49,13 @@ public class MostFrequentSubtreeSum {
     public static void main(String[] args) throws Exception {
         MostFrequentSubtreeSum mfs = new MostFrequentSubtreeSum();
         TreeNode node = new TreeNode(5);
-        //node.left = new TreeNode(2);
-        //node.right = new TreeNode(-5);
+        node.left = new TreeNode(2);
+        node.right = new TreeNode(-5);
         int[] result = mfs.findFrequentTreeSum(node);
+        for (int i = 0 ; i< result.length; i++)
+        {
+            System.out.println(result[i]);
+        }
     }
 
     public int[] findFrequentTreeSum(TreeNode root) {
