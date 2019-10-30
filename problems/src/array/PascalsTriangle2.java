@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 另一种方法
+ */
 public class PascalsTriangle2 {
     public static void main(String[] args) throws Exception {
 //        System.out.println(new PascalsTriangle().getRow(4));
